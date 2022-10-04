@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="sv">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boka</title>
+    <title>Info</title>
     <link rel="stylesheet" href="stil.css">
 </head>
 
@@ -11,18 +12,66 @@
 
     <nav class="navigation">
         <a href="index.html" class="navigation__logo">
-            <img class="navigation__bild" src="bilder/bonz.ai-logo-color-landscape.png" alt="logo">
+            <img class="navigation__img" src="bilder/bonz.ai-logo-black-landscape.png" alt="logo">
         </a>
-        <a class="navigation__link" href="om.html">Information</a>
+        <a class="navigation__link current" href="om.html">Information</a>
         <a class="navigation__link" href="boka.html">Boka</a>
-        <button class="navigation__button">Login</button>
+        <button class="button button--navigation">Login</button>
     </nav>
 
-    <p>om</p>
+    <main class="info">
+        <h1>Information</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam excepturi ad laboriosam dolores natus ea, minima placeat, molestias odit sed quod quasi. Explicabo dignissimos modi iste quidem id provident quo?
+            Voluptate temporibus vitae quibusdam repellat deserunt nostrum, alias, optio ipsa earum soluta voluptas. Accusantium quia est fugiat aliquid non doloremque consequatur recusandae architecto aut veritatis nisi atque, praesentium facere quasi.
+            Ipsam in aliquid nam beatae nisi eos quam modi recusandae? Ipsa assumenda quas quibusdam quisquam reprehenderit a nam eius sapiente. Voluptate deleniti laborum enim possimus reiciendis harum ipsa, iure assumenda.</p>
+        <p> At soluta nisi aut est voluptas magni culpa debitis consequuntur. Voluptas accusantium vero error suscipit explicabo non fugiat, quibusdam possimus quod blanditiis earum animi corrupti illum rerum quaerat tempora officiis.
+            Veniam, blanditiis? Tenetur, quibusdam? Quam iusto dignissimos itaque alias doloremque corrupti error, iure id quibusdam dolor, quo assumenda cupiditate modi provident explicabo enim ut quis tempora consequatur ipsum obcaecati? Ipsa. </p>
+        <figure>
+            <img class="info__img" src="bilder/08-night.jpg" alt="nattrum">
+            <figcaption>Exempel på ett klass 1 rum</figcaption>
+        </figure>
+        <h2>Anmäl er till vårt bunusprogram</h2>
+        <h3>Hur gör man?</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ad deserunt delectus et dolorem quaerat adipisci veniam odit ducimus sunt, culpa placeat iure consequatur perspiciatis. Numquam consectetur et quasi cupiditate!
+            Iure soluta eius nostrum totam? Ullam aspernatur tempore consequatur autem provident, sint maxime quas non distinctio iusto, quis nesciunt iure vel laborum corporis, veritatis voluptate incidunt a? Officiis, perspiciatis velit.
+        </p>
+        <h3>Fördelar</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam non provident aspernatur fugit. Dolore iste fugiat dolorum voluptates error, eligendi enim repellat deleniti magni quam expedita deserunt asperiores et reprehenderit?
+            Illum rerum, asperiores provident, eius perferendis repellendus tenetur doloribus ipsa, deleniti eveniet officia vel. Eligendi exercitationem qui dolores voluptates. Adipisci ullam qui optio debitis eaque? Accusamus eveniet temporibus molestiae perspiciatis?
+            Vitae expedita laboriosam sequi ad nulla veritatis ea! Doloribus consectetur facere quia dicta incidunt, voluptates repudiandae dolorum, nulla sequi provident in iste velit. Eligendi dolor laudantium iste, veniam corrupti nesciunt!
+        </p>
+        <h2>Vi vill höra era åsikter</h2>
+        <p>Fyll gärna i formuläret nedan.</p>
+        <h3>Kontaktformulär</h3>
+        <form action="" class="form">
+            <label class="form__label" for="contact-name">Namn:</label>
+            <input class="form__field" type="text" id="contact-name">
+            <label class="form__label" for="contact-email">E-post:</label>
+            <input class="form__field" type="email" name="" id="contact-email">
+            <label class="form__label" for="contact-text">Meddelande:</label>
+            <textarea class="form__field" name="" id="contact-text" cols="30" rows="10"></textarea>
+            <button class="button button--form">Skicka</button>
+        </form>
+
+    </main>
 
     <footer class="footer">
-        <p>&copy; 2022 Bonz.ai</p>
+        <nav class="footer__navigation">
+            <a class="footer__link" href="index.html">Hem</a>
+            <a class="footer__link" href="om.html">Information</a>
+            <a class="footer__link" href="boka.html">Boka</a>
+        </nav>
+        <address class="footer__address">
+            Vägvägen 1<br>
+            12345 Stad<br>
+            info@Bonz.ai
+        </address>
+        <img class="footer__img" src="bilder/bonz.ai-logo-black-portrait-full.png" alt="logo">
     </footer>
 
 </body>
+
 </html>

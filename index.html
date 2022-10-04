@@ -12,55 +12,51 @@
 
     <nav class="navigation">
         <a href="index.html" class="navigation__logo">
-            <img class="navigation__bild" src="bilder/bonz.ai-logo-black-landscape.png" alt="logo">
+            <img class="navigation__img" src="bilder/bonz.ai-logo-black-landscape.png" alt="logo">
         </a>
         <a class="navigation__link" href="om.html">Information</a>
         <a class="navigation__link" href="boka.html">Boka</a>
-        <button class="navigation__button">Login</button>
+        <button class="button button--navigation">Login</button>
     </nav>
 
-    <section class="content">
-        <article class="content__boka">
-            <a class="content__link" href="boka.html">
-                <h2 class="content__rubrik">Boka nu</h2>
-                <p class="content__paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
-                    voluptates similique eaque reprehenderit vel provident repellendus repellat. Ab debitis
-                    quibusdam sequi laborum rerum porro, itaque dolorum voluptate enim quisquam?</p>
-                <p class="content__paragraf"> Repudiandae! Doloremque deleniti facilis minima nisi fuga quia debitis laboriosam
-                    enim explicabo ab cupiditate consequatur cumque possimus sunt molestiae itaque, vel
-                    magnam nemo tempore pariatur delectus repellat! Deserunt aut similique fuga?</p>
-                <form class="content__form">
-                    <label for="destination">Stad:</label>
-                    <input type="text" id="destination">
-                    <label for="date">Datum:</label>
-                    <input type="date" name="date" id="date">
-                    <label for="nights">Antal nätter:</label>
-                    <input type="number" name="nights" id="nights">
-                    <button>Sök</button>
-                </form>
-                <img class="content__bild" src="bilder/09-day.jpg" alt="hotel exterior">
-            </a>
+    <main class="content">
+        <article class="article">
+            <h2 class="article__h2">Boka nu</h2>
+            <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                voluptates similique eaque reprehenderit vel provident repellendus repellat. Ab debitis
+                quibusdam sequi laborum rerum porro, itaque dolorum voluptate enim quisquam?</p>
+            <p class="article__paragraph"> Repudiandae! Doloremque deleniti facilis minima nisi fuga quia debitis laboriosam
+                enim explicabo ab cupiditate consequatur cumque possimus sunt molestiae itaque, vel
+                magnam nemo tempore pariatur delectus repellat! Deserunt aut similique fuga?</p>
+            <form class="form" action="boka.html">
+                <label class="form__label" for="destination">Destination:</label>
+                <input class="form__field" type="text" id="destination">
+                <label class="form__label" for="date">Checkin:</label>
+                <input class="form__field" type="date" name="date-in" id="date-in">
+                <label class="form__label" for="nights">Checkout:</label>
+                <input class="form__field" type="date" name="date-out" id="date-out">
+                <button class="button button--form">SÖK</button>
+            </form>
+            <img class="article__img" src="bilder/09-day.jpg" alt="hotel exterior">
         </article>
-        <article class="content__om">
-            <a class="content__link" href="om.html">
-                <h2 class="content__rubrik">Välkommen</h2>
-                <p class="content__paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
-                    voluptates similique eaque reprehenderit vel provident repellendus repellat.</p>
-                <p class="content__paragraf">Ab debitis quibusdam sequi laborum rerum porro, itaque dolorum voluptate enim
-                    quisquam? Repudiandae! Quos, cumque? Sint modi ipsum fuga nihil explicabo
-                    voluptatibus nostrum. Deleniti nisi dolorum tempore dolorem tenetur, recusandae
-                    cupiditate asperiores quo quam voluptatem sed sunt? Laboriosam illum eligendi
-                    quos nostrum facilis!</p>
-                <p class="content__paragraf"> Doloremque deleniti facilis minima nisi fuga quia debitis laboriosam enim explicabo
-                    ab cupiditate consequatur cumque possimus sunt molestiae itaque, vel magnam nemo
-                    tempore pariatur delectus repellat! Deserunt aut similique fuga?</p>
-                <p class="content__paragraf"> Doloremque deleniti facilis minima nisi fuga quia debitis laboriosam enim explicabo
-                    ab cupiditate consequatur cumque possimus sunt molestiae itaque, vel magnam nemo
-                    tempore pariatur delectus repellat! Deserunt aut similique fuga?</p>
-                <img class="content__bild" src="bilder/03-day.jpg" alt="hotel interior">
-            </a>
+        <article class="article">
+            <h2 class="article__h2">Välkommen</h2>
+            <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                voluptates similique eaque reprehenderit vel provident repellendus repellat.</p>
+            <p class="article__paragraph">Ab debitis quibusdam sequi laborum rerum porro, itaque dolorum voluptate enim
+                quisquam? Repudiandae! Quos, cumque? Sint modi ipsum fuga nihil explicabo
+                voluptatibus nostrum. Deleniti nisi dolorum tempore dolorem tenetur, recusandae
+                cupiditate asperiores quo quam voluptatem sed sunt? Laboriosam illum eligendi
+                quos nostrum facilis!</p>
+            <p class="article__paragraph"> Doloremque deleniti facilis minima nisi fuga quia debitis laboriosam enim explicabo
+                ab cupiditate consequatur cumque possimus sunt molestiae itaque, vel magnam nemo
+                tempore pariatur delectus repellat! Deserunt aut similique fuga?</p>
+            <p class="article__paragraph"> Doloremque deleniti facilis minima nisi fuga quia debitis laboriosam enim explicabo
+                ab cupiditate consequatur cumque possimus sunt molestiae itaque, vel magnam nemo
+                tempore pariatur delectus repellat! Deserunt aut similique fuga?</p>
+            <img class="article__img" src="bilder/03-day.jpg" alt="hotel interior">
         </article>
-    </section>
+    </main>
 
     <footer class="footer">
         <nav class="footer__navigation">
@@ -68,12 +64,12 @@
             <a class="footer__link" href="om.html">Information</a>
             <a class="footer__link" href="boka.html">Boka</a>
         </nav>
-        <address class="footer__adress">
+        <address class="footer__address">
             Vägvägen 1<br>
             12345 Stad<br>
             info@Bonz.ai
         </address>
-        <img class="footer__bild" src="bilder/bonz.ai-logo-black-portrait-full.png" alt="logo">
+        <img class="footer__img" src="bilder/bonz.ai-logo-black-portrait-full.png" alt="logo">
     </footer>
 
 </body>

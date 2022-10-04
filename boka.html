@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="sv">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +12,50 @@
 
     <nav class="navigation">
         <a href="index.html" class="navigation__logo">
-            <img class="navigation__bild" src="bilder/bonz.ai-logo-color-landscape.png" alt="logo">
+            <img class="navigation__img" src="bilder/bonz.ai-logo-black-landscape.png" alt="logo">
         </a>
         <a class="navigation__link" href="om.html">Information</a>
         <a class="navigation__link" href="boka.html">Boka</a>
-        <button class="navigation__button">Login</button>
+        <button class="button button--navigation">Login</button>
     </nav>
+    <main>
+        <section>
+            <form class="form form--row" action="boka.html">
+                <label class="form__label" for="destination">Destination:</label>
+                <input class="form__field form__field--row" type="text" id="destination">
+                <label class="form__label" for="date">Checkin:</label>
+                <input class="form__field form__field--row" type="date" name="date-in" id="date-in">
+                <label class="form__label" for="nights">Checkout:</label>
+                <input class="form__field form__field--row" type="date" name="date-out" id="date-out">
+                <button class="button button--form">SÖK</button>
+            </form>
+        </section>
+        <section class="results">
+            <h2>Sökresultat:</h2>
+            <article class="roomcard">
+                <img class="roomcard__img" src="bilder/01-day.jpg" alt="">
+                <h3>Hall</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut ducimus quidem assumenda doloremque officia ipsam unde, id eum? Vitae soluta ut obcaecati minus dolorem hic eius impedit provident corrupti.
+                </p>
+            </article>
 
-    <p>boka</p>
-
+        </section>
+    </main>
     <footer class="footer">
-        <p>&copy; 2022 Bonz.ai</p>
+        <nav class="footer__navigation">
+            <a class="footer__link" href="index.html">Hem</a>
+            <a class="footer__link" href="om.html">Information</a>
+            <a class="footer__link" href="boka.html">Boka</a>
+        </nav>
+        <address class="footer__address">
+            Vägvägen 1<br>
+            12345 Stad<br>
+            info@Bonz.ai
+        </address>
+        <img class="footer__img" src="bilder/bonz.ai-logo-black-portrait-full.png" alt="logo">
     </footer>
 
 </body>
+
 </html>
