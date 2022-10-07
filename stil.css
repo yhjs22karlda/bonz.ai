@@ -1,3 +1,6 @@
+/*
+
+*/
 * {
     box-sizing: border-box;
 }
@@ -7,7 +10,7 @@ body {
     width: clamp(0px, calc(100% - 20px), 1200px);
     max-width: 1200px;
     margin: 0 auto;
-    background: linear-gradient( rgb(248 237 227), white );
+    background: no-repeat linear-gradient(rgb(248 237 227), white );
 }
 
 h1, h2, h3 {
@@ -162,9 +165,10 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 2rem;
+    align-items: center;
+    padding: 1rem;
     background: #dfd3c3;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .footer__navigation {
@@ -174,7 +178,7 @@ p {
 
 .footer__link {
     color: black;
-    line-height: 1.6rem;
+    line-height: 2.2rem;
 }
 
 .footer__address {
@@ -239,7 +243,7 @@ p {
     padding: 1rem;
  }
 
-/*====================== @media ===========================*/
+/*====================== @media 1074 ======================*/
 @media screen and (max-width: 1074px) {
     .form--row {
         flex-direction: column;
@@ -265,7 +269,7 @@ p {
     }
 }
 
-/*=========================================================*/
+/*=================== @media 793 ==========================*/
 @media screen and (max-width: 793px) {
     .navigation {
         display: grid;
@@ -305,7 +309,7 @@ p {
     }
 }
 
-/*=========================================================*/
+/*=================== @media 450 ==========================*/
 @media screen and (max-width: 450px) {
     .navigation {
         display: flex;
